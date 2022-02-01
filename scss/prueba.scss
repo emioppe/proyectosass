@@ -1,0 +1,116 @@
+*{
+     padding: 0px;
+     margin: 0px;
+     }
+     
+     
+     
+     /*HEADER*/
+     .navbar{
+          
+          height: 100px;
+          font-size: 19px;
+          
+     }
+     
+     /*LOGO*/
+     @font-face{
+                font-family: harrington;
+                src: url(HARRINGT.TTF);
+     }
+     
+     /*MENU*/
+     .navbar h1 a{  
+          font-family: harrington;
+          font-size: 45px;
+          
+     }
+     
+     
+     .navbar  a{  
+                  font-family: harrington;
+                   font-size: 20px;
+                   
+     }
+     
+     
+     
+     
+     .navbar a:hover{
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     }
+     
+     main{
+          background-color: white;
+          height: 100%;
+          width: 100%;
+     }
+     
+     /*FOTOS*/
+     #galeria{
+           display:flex;
+           flex-wrap: wrap;
+           gap: 60px;
+           justify-content: space-around;
+           padding: 5rem 3rem 5rem 3rem;
+           
+           
+     }
+     
+     
+     #galeria img:hover{
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+     }
+     
+     .slide{
+            margin-top: 10px;
+     }
+     
+     
+     /*FORMULARIO*/
+     
+     
+     #contenedor-formulario{
+                            padding: 20px;
+                           margin: 30px;
+                            background:whitesmoke;
+                            border-radius: 10px;
+                            width: 50%;
+                            border:1px solid black;
+                            
+                    
+     }
+     
+     #titulo-formulario{
+                        color: black;
+     }
+     
+     
+     
+     
+     /*FOTTER Y REDES SOCIALES*/
+     footer{
+          width: 100%;
+          background-color: black;
+          height: 200px;
+          color: white;
+          padding: 10px;
+     }
+     
+     
+     .redessociales li{
+                        padding: 4px;
+                        
+     }              
+     
+     .redessociales li a{
+                          
+                    color: white;
+                    text-decoration: none;
+     }          
+     
+      .page{
+            text-align: center;
+            font-family: harrington;
+            font-size: 20px;
+      }
