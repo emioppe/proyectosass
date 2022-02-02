@@ -1,7 +1,14 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px; }
 
+/*VARIABLES SASS/*
+
+    /*cambiar color de fonde del main*/
+/*cambiar color de las redes*/
+/*cambiar tamaño a los menus*/
+/*cambiar tamaño de fotos*/
 /*HEADER*/
 .navbar {
   height: 100px;
@@ -10,7 +17,7 @@
 /*LOGO*/
 @font-face {
   font-family: harrington;
-  src: url(HARRINGT.TTF); }
+  src: url(../HARRINGT.TTF); }
 
 /*MENU*/
 .navbar h1 a {
@@ -25,7 +32,7 @@
   box-shadow: #26394d 0px 20px 30px -10px; }
 
 main {
-  background-color: white;
+  background-color: #f1e8e9;
   height: 100%;
   width: 100%; }
 
@@ -64,11 +71,14 @@ footer {
   padding: 10px; }
 
 .redessociales li {
-  padding: 4px; }
-
-.redessociales li a {
-  color: white;
-  text-decoration: none; }
+  padding: 5px; }
+  .redessociales li a {
+    color: #f1e4e4;
+    text-decoration: none;
+    font-size: 20px; }
+  .redessociales li .wsapp {
+    color: #f1e4e4;
+    font-size: 20px; }
 
 .page {
   text-align: center;

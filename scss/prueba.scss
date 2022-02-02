@@ -3,7 +3,57 @@
      margin: 0px;
      }
      
-     
+
+     $primary: #0074d9;
+     $danger: #ff4136;
+
+     $theme-colors: (
+          "primary": $primary,
+          "danger": $danger
+        );
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+
+
+
+
+/*VARIABLES SASS/*
+
+    /*cambiar color de fonde del main*/ 
+$main:rgb(241, 232, 233);
+
+/*cambiar color de las redes*/
+$colorredes:rgb(241, 228, 228);
+
+
+
+
+/* no se como hacer q funcionen*/
+/*cambiar tamaño a los menus*/
+$font-size: 20px;
+
+
+/*cambiar tamaño de fotos*/
+$fotos:width="300px" height="300px";
+
+
+
+
+
+
+
+
+
+
      
      /*HEADER*/
      .navbar{
@@ -16,7 +66,7 @@
      /*LOGO*/
      @font-face{
                 font-family: harrington;
-                src: url(HARRINGT.TTF);
+                src: url(../HARRINGT.TTF);
      }
      
      /*MENU*/
@@ -41,7 +91,8 @@
      }
      
      main{
-          background-color: white;
+
+          background-color: $main;
           height: 100%;
           width: 100%;
      }
@@ -53,6 +104,10 @@
            gap: 60px;
            justify-content: space-around;
            padding: 5rem 3rem 5rem 3rem;
+           
+           
+           
+           
            
            
      }
@@ -98,16 +153,29 @@
      }
      
      
+     
      .redessociales li{
-                        padding: 4px;
+                        padding: 5px;
+
+                     a {
+                         color: $colorredes;
+                         text-decoration: none;
+                         font-size: 20px;
+                                    
+
+                      } 
+
+
+                      .wsapp{
+                         color:$colorredes;
+                         font-size: 20px;
+                     }
+               
                         
      }              
      
-     .redessociales li a{
-                          
-                    color: white;
-                    text-decoration: none;
-     }          
+   
+                                   
      
       .page{
             text-align: center;
