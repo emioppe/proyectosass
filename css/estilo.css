@@ -17,7 +17,7 @@ body{
   border-radius: 50%;
   bottom: 20px;
   right: 25px;
-  padding: 25px;
+  padding: 5px;
   transition: ease 0.3s;
   animation: efecto 1.2s infinite;
 }
@@ -28,7 +28,7 @@ body{
 }
 
 .boton{
-  width: 80px;
+  width: 30px;
   transition: ease 1s;
 }
 
@@ -53,6 +53,7 @@ body{
 
 /*MENU*/
 .navbar h1 a {
+    
   font-family: harrington;
   font-size: 45px;
   margin: 20px; }
