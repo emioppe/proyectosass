@@ -4,20 +4,11 @@
      }
      
 
-     $primary: #0074d9;
-     $danger: #ff4136;
-
-     $theme-colors: (
-          "primary": $primary,
-          "danger": $danger
-        );
 
 
 
-
-
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
-
+/*utilizar SASS con boostrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";*/
 
 
 
@@ -29,7 +20,7 @@
 /*VARIABLES SASS/*
 
     /*cambiar color de fonde del main*/ 
-$main:rgb(241, 232, 233);
+$main:rgb(235, 243, 235);
 
 /*cambiar color de las redes*/
 $colorredes:rgb(241, 228, 228);
@@ -73,6 +64,7 @@ $fotos:width="300px" height="300px";
      .navbar h1 a{  
           font-family: harrington;
           font-size: 45px;
+          margin: 20px;
           
      }
      
@@ -89,6 +81,9 @@ $fotos:width="300px" height="300px";
      .navbar a:hover{
           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
      }
+
+
+    
      
      main{
 
@@ -120,7 +115,14 @@ $fotos:width="300px" height="300px";
      .slide{
             margin-top: 10px;
      }
-     
+     /*CONTACTOS*/
+.logoinsta{
+             
+     padding-left: 80vh;
+}
+.logoface{
+   padding-left: 20px;
+}
      
      /*FORMULARIO*/
      
@@ -128,9 +130,9 @@ $fotos:width="300px" height="300px";
      #contenedor-formulario{
                             padding: 20px;
                            margin: 30px;
-                            background:whitesmoke;
+                            background:white;
                             border-radius: 10px;
-                            width: 50%;
+                            width: 80%;
                             border:1px solid black;
                             
                     

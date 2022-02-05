@@ -3,10 +3,13 @@
   padding: 0px;
   margin: 0px; }
 
+/*utilizar SASS con boostrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";*/
 /*VARIABLES SASS/*
 
     /*cambiar color de fonde del main*/
 /*cambiar color de las redes*/
+/* no se como hacer q funcionen*/
 /*cambiar tamaño a los menus*/
 /*cambiar tamaño de fotos*/
 /*HEADER*/
@@ -22,7 +25,8 @@
 /*MENU*/
 .navbar h1 a {
   font-family: harrington;
-  font-size: 45px; }
+  font-size: 45px;
+  margin: 20px; }
 
 .navbar a {
   font-family: harrington;
@@ -32,7 +36,7 @@
   box-shadow: #26394d 0px 20px 30px -10px; }
 
 main {
-  background-color: #f1e8e9;
+  background-color: #ebf3eb;
   height: 100%;
   width: 100%; }
 
@@ -50,13 +54,20 @@ main {
 .slide {
   margin-top: 10px; }
 
+/*CONTACTOS*/
+.logoinsta {
+  padding-left: 80vh; }
+
+.logoface {
+  padding-left: 20px; }
+
 /*FORMULARIO*/
 #contenedor-formulario {
   padding: 20px;
   margin: 30px;
-  background: whitesmoke;
+  background: white;
   border-radius: 10px;
-  width: 50%;
+  width: 80%;
   border: 1px solid black; }
 
 #titulo-formulario {
