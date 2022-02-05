@@ -3,15 +3,14 @@
   padding: 0px;
   margin: 0px; }
 
-/*utilizar SASS con boostrap
-@import "../node_modules/bootstrap/scss/bootstrap.scss";*/
 /*VARIABLES SASS/*
 
     /*cambiar color de fonde del main*/
 /*cambiar color de las redes*/
-/* no se como hacer q funcionen*/
 /*cambiar tamaño a los menus*/
-/*cambiar tamaño de fotos*/
+/*cambiar tamaño de fotos
+$tamaño: width 250px;
+$tamaño: height: 250px;*/
 /*HEADER*/
 .navbar {
   height: 100px;
@@ -50,6 +49,10 @@ main {
 
 #galeria img:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; }
+
+.img-fluid {
+  width: 250px;
+  height: 250px; }
 
 .slide {
   margin-top: 10px; }
