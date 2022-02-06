@@ -4,7 +4,7 @@
   margin: 0px; }
 
 
-
+/* BOTON WHATSAPP*/
 body{
   background-color: rgba(175, 204, 172);
 }
@@ -17,7 +17,7 @@ body{
   border-radius: 50%;
   bottom: 20px;
   right: 25px;
-  padding: 5px;
+  padding: 10px;
   transition: ease 0.3s;
   animation: efecto 1.2s infinite;
 }
@@ -52,18 +52,35 @@ body{
   src: url(../HARRINGT.TTF); }
 
 /*MENU*/
-.navbar h1 a {
+.titulo h1 a {
     
   font-family: harrington;
-  font-size: 45px;
+  font-size: 50px;
   margin: 20px; }
+
+  .titulo h1 a:hover{
+    cursor: pointer;
+    transform: translateY(-4px) ;
+    
+  }
 
 .navbar a {
   font-family: harrington;
-  font-size: 20px; }
+  font-size: 25px;
+  
+  
+}
+
 
 .navbar a:hover {
-  box-shadow: #26394d 0px 20px 30px -10px; }
+  cursor: pointer;
+ transform: translateY(-4px);/*se mueve hacia arriba cuando paso el mause*/
+ background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
+  -webkit-background-clip: text;/*el color de fondo se pega al texto*/
+  background-clip: text;/*para soportar diferentes versiones de navegadores*/
+  -webkit-text-fill-color:transparent;/*las lineas de fondo son transparentes*/
+
+}
 
 main {
   background-color: #ebf3eb;
@@ -79,9 +96,9 @@ main {
   padding: 5rem 3rem 5rem 3rem; }
 
 #galeria img:hover {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; }
+  transform: translateY(-10px); }
 
-.img-fluid {
+.imagenes {
   width: 250px;
   height: 250px; }
 
@@ -124,6 +141,16 @@ footer {
   .redessociales li .wsapp {
     color: #f1e4e4;
     font-size: 20px; }
+
+
+    .redessociales li a:hover {
+      cursor: pointer;
+     transform: translateY(-4px);
+     -webkit-text-fill-color:red;
+    
+    
+    
+    }
 
 .page {
   text-align: center;
