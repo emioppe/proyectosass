@@ -1,15 +1,24 @@
 @charset "UTF-8";
+/*variables sass*/
+/*cambiar el color de las redes sociales del footer*/
+/*cambiar el color de fonde del MAIN*/
+/*cambiar el tamaño de las fotos*/
+/*hover en las fotos*/
+/*@import"nav_color.scss";*/
+/*@import"botones_color.css"/*
+
+
+
+
+
+
 * {
-  padding: 0px;
-  margin: 0px; }
-
-
-/* BOTON WHATSAPP*/
-body{
-  background-color: rgba(175, 204, 172);
-}
-
-.container-boton{
+     padding: 0px;
+     margin: 0px; }
+   
+   
+   /* BOTON WHATSAPP*/
+.container-boton {
   background-color: #2e6329;
   border: 1px solid #fff;
   position: fixed;
@@ -19,31 +28,25 @@ body{
   right: 25px;
   padding: 10px;
   transition: ease 0.3s;
-  animation: efecto 1.2s infinite;
-}
+  animation: efecto 1.2s infinite; }
 
-.container-boton:hover{
+.container-boton:hover {
   transform: scale(1.1);
-  transition: 0.3s;
-}
+  transition: 0.3s; }
 
-.boton{
+.boton {
   width: 30px;
-  transition: ease 1s;
-}
+  transition: ease 1s; }
 
-@keyframes efecto{
-  0%{
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
-  }
-  100%{
-      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-  }
-}
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85); }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0); } }
 
 /*HEADER*/
 .navbar {
-  height: 100px;
+  height: 120px;
   font-size: 19px; }
 
 /*LOGO*/
@@ -53,37 +56,33 @@ body{
 
 /*MENU*/
 .titulo h1 a {
-    
   font-family: harrington;
-  font-size: 50px;
+  font-size: 45px;
   margin: 20px; }
 
-  .titulo h1 a:hover{
-    cursor: pointer;
-    transform: translateY(-4px) ;
-    
-  }
+.titulo h1 a:hover {
+  cursor: pointer;
+  transform: translateY(-4px); }
 
 .navbar a {
   font-family: harrington;
-  font-size: 25px;
-  
-  
-}
-
+  font-size: 25px; }
 
 .navbar a:hover {
   cursor: pointer;
- transform: translateY(-4px);/*se mueve hacia arriba cuando paso el mause*/
- background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
-  -webkit-background-clip: text;/*el color de fondo se pega al texto*/
-  background-clip: text;/*para soportar diferentes versiones de navegadores*/
-  -webkit-text-fill-color:transparent;/*las lineas de fondo son transparentes*/
+  transform: translateY(-4px);
+  /*se mueve hacia arriba cuando paso el mause*/
+  background-image: linear-gradient(to top right, #3b073b, #3737e6);
+  -webkit-background-clip: text;
+  /*el color de fondo se pega al texto*/
+  background-clip: text;
+  /*para soportar diferentes versiones de navegadores*/
+  -webkit-text-fill-color: transparent;
+  /*las lineas de fondo son transparentes*/ }
 
-}
-
+/*MAIN*/
 main {
-  background-color: #ebf3eb;
+  background-color: #f7e5e5;
   height: 100%;
   width: 100%; }
 
@@ -96,7 +95,8 @@ main {
   padding: 5rem 3rem 5rem 3rem; }
 
 #galeria img:hover {
-  transform: translateY(-10px); }
+  transform: translateY(-10px);
+  box-shadow: #26394d 0px 20px 30px -10px; }
 
 .imagenes {
   width: 250px;
@@ -109,8 +109,16 @@ main {
 .logoinsta {
   padding-left: 80vh; }
 
+.logoinsta:hover {
+  cursor: pointer;
+  transform: translateY(-4px); }
+
 .logoface {
   padding-left: 20px; }
+
+.logoface:hover {
+  cursor: pointer;
+  transform: translateY(-4px); }
 
 /*FORMULARIO*/
 #contenedor-formulario {
@@ -134,23 +142,20 @@ footer {
 
 .redessociales li {
   padding: 5px; }
-  .redessociales li a {
-    color: #f1e4e4;
-    text-decoration: none;
-    font-size: 20px; }
-  .redessociales li .wsapp {
-    color: #f1e4e4;
-    font-size: 20px; }
 
+.redessociales li a {
+  color: #f8faf8;
+  text-decoration: none;
+  font-size: 20px; }
 
-    .redessociales li a:hover {
-      cursor: pointer;
-     transform: translateY(-4px);
-     -webkit-text-fill-color:red;
-    
-    
-    
-    }
+.redessociales li .wsapp {
+  color: #f8faf8;
+  font-size: 20px; }
+
+.redessociales li a:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  -webkit-text-fill-color: #e70e0e; }
 
 .page {
   text-align: center;

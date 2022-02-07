@@ -1,41 +1,43 @@
-*{
+
+/*variables sass*/
+
+/*cambiar el color de las redes sociales del footer*/
+$colorredessociales:rgb(248, 250, 248);
+
+
+/*cambiar el color de fonde del MAIN*/
+$maincolor:rgb(247, 229, 229);
+
+
+/*cambiar el tamaño de las fotos*/
+$tamañoimagenes:width 250px;
+$tamañoimagenes:height 250px;
+
+
+/*hover en las fotos*/
+$hover_fotos:translateY(-10px);
+$sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;   
+
+
+
+/*@import"nav_color.scss";*/
+
+/*@import"botones_color.css"/*
+
+
+
+
+
+
+* {
      padding: 0px;
-     margin: 0px;
-     }
-     
-
-
-/*VARIABLES SASS/*
-
-    /*cambiar color de fonde del main*/ 
-$main:rgb(235, 243, 235);
-
-/*cambiar color de las redes*/
-$colorredes:rgb(241, 228, 228);
-
-
-
-
-
-/*cambiar tamaño a los menus*/
-
-
-
-/*cambiar tamaño de fotos
-$tamaño: width 250px;
-$tamaño: height: 250px;*/
-
-
-
-
-
-/*BOTON DE WHATSAPP*/
-
-body{
-     background-color: rgba(175, 204, 172);
- }
- 
- .container-boton{
+     margin: 0px; }
+   
+   
+   /* BOTON WHATSAPP*/
+  
+   
+   .container-boton{
      background-color: #2e6329;
      border: 1px solid #fff;
      position: fixed;
@@ -43,174 +45,169 @@ body{
      border-radius: 50%;
      bottom: 20px;
      right: 25px;
-     padding: 25px;
+     padding: 10px;
      transition: ease 0.3s;
      animation: efecto 1.2s infinite;
- }
- 
- .container-boton:hover{
+   }
+   
+   .container-boton:hover{
      transform: scale(1.1);
      transition: 0.3s;
- }
- 
- .boton{
-     width: 80px;
+   }
+   
+   .boton{
+     width: 30px;
      transition: ease 1s;
- }
- 
- @keyframes efecto{
+   }
+   
+   @keyframes efecto{
      0%{
          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
      }
      100%{
          box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
      }
- }
-
-
-
-
-
-     
-     /*HEADER*/
-     .navbar{
-          
-          height: 100px;
-          font-size: 19px;
-          
+   }
+   
+   /*HEADER*/
+   .navbar {
+     height: 120px;
+     font-size: 19px; }
+   
+   /*LOGO*/
+   @font-face {
+     font-family: harrington;
+     src: url(../HARRINGT.TTF); }
+   
+   /*MENU*/
+   .titulo h1 a {
+       
+     font-family: harrington;
+     font-size: 45px;
+     margin: 20px; }
+   
+     .titulo h1 a:hover{
+       cursor: pointer;
+       transform: translateY(-4px) ;
+       
      }
-     
-     /*LOGO*/
-     @font-face{
-                font-family: harrington;
-                src: url(../HARRINGT.TTF);
-     }
-     
-     /*MENU*/
-     .navbar h1 a{  
-          font-family: harrington;
-          font-size: 45px;
-          margin: 20px;
-          
-     }
+   
+   .navbar a {
+     font-family: harrington;
+     font-size: 25px;
      
      
-     .navbar  a{  
-                  font-family: harrington;
-                   font-size: 20px;
-                   
-     }
-     
-     
-     
-     
-     .navbar a:hover{
-          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-     }
-
-
-    
-     
-     main{
-
-          background-color: $main;
-          height: 100%;
-          width: 100%;
-     }
-
-
-
-     
-     /*FOTOS*/
-     #galeria{
-           display:flex;
-           flex-wrap: wrap;
-           gap: 60px;
-           justify-content: space-around;
-           padding: 5rem 3rem 5rem 3rem; 
-           
-     }
-     
-     
-     #galeria img:hover{
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-     }
-
-     .img-fluid{ 
-                 width:250px;
-                 height: 250px;
-               
-     }
-     
-     .slide{
-            margin-top: 10px;
-     }
-     /*CONTACTOS*/
-.logoinsta{
-             
-     padding-left: 80vh;
-}
-.logoface{
-   padding-left: 20px;
-}
-     
-     /*FORMULARIO*/
-     
-     
-     #contenedor-formulario{
-                            padding: 20px;
-                           margin: 30px;
-                            background:white;
-                            border-radius: 10px;
-                            width: 80%;
-                            border:1px solid black;
-                            
-                    
-     }
-     
-     #titulo-formulario{
-                        color: black;
-     }
-     
-     
-     
-     
-     /*FOTTER Y REDES SOCIALES*/
-     footer{
-          width: 100%;
-          background-color: black;
-          height: 200px;
-          color: white;
-          padding: 10px;
-     }
-     
-     
-     
-        .redessociales li{
-                        padding: 5px;
-
-                     a {
-                         color: $colorredes;
-                         text-decoration: none;
-                         font-size: 20px;
-                                    
-
-                      } 
-
-
-                      .wsapp{
-                         color:$colorredes;
-                         font-size: 20px;
-                     }
-               
-                        
-     }              
+   }
+   
+   
+   .navbar a:hover {
+     cursor: pointer;
+    transform: translateY(-4px);/*se mueve hacia arriba cuando paso el mause*/
+    background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
+     -webkit-background-clip: text;/*el color de fondo se pega al texto*/
+     background-clip: text;/*para soportar diferentes versiones de navegadores*/
+     -webkit-text-fill-color:transparent;/*las lineas de fondo son transparentes*/
      
    
-                                   
+   }
+   
+   /*MAIN*/
+   main {
+     background-color: $maincolor;
+     height: 100%;
+     width: 100%;
+ }
+   
+   /*FOTOS*/
+   #galeria {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 60px;
+     justify-content: space-around;
+     padding: 5rem 3rem 5rem 3rem; 
      
-      .page{
-            text-align: center;
-            font-family: harrington;
-            font-size: 20px;
+     
+}
+   
+   #galeria img:hover {
+     transform:$hover_fotos;
+     box-shadow: #26394d 0px 20px 30px -10px;  
+ }
+   
+   .imagenes {
+     width: 250px;
+     height: 250px;
+ }
+   
+   .slide {
+     margin-top: 10px; }
+   
+   /*CONTACTOS*/
+   .logoinsta {
+     padding-left: 80vh;
+     }
+
+     .logoinsta:hover{
+      cursor: pointer;
+       transform: translateY(-4px) ;
+       
+     }
+
+   .logoface {
+     padding-left: 20px; 
+    }
+    .logoface:hover{
+      cursor: pointer;
+      transform: translateY(-4px) ;
+      
+    }
+   
+   /*FORMULARIO*/
+   #contenedor-formulario {
+     padding: 20px;
+     margin: 30px;
+     background: white;
+     border-radius: 10px;
+     width: 80%;
+     border: 1px solid black; }
+   
+   #titulo-formulario {
+     color: black; }
+   
+   /*FOTTER Y REDES SOCIALES*/
+   footer {
+     width: 100%;
+     background-color: black;
+     height: 200px;
+     color: white;
+     padding: 10px; }
+   
+   .redessociales li {
+     padding: 5px; 
+}
+     .redessociales li a {
+       color: $colorredessociales;
+       text-decoration: none;
+       font-size: 20px;
       }
+
+     .redessociales li .wsapp {
+       color: $colorredessociales;
+       font-size: 20px;
+      }
+   
+   
+       .redessociales li a:hover {
+         cursor: pointer;
+        transform: translateY(-4px);
+        -webkit-text-fill-color:rgb(231, 14, 14);
+        
+       
+       
+       }
+   
+   .page {
+     text-align: center;
+     font-family: harrington;
+     font-size: 20px; }
+   
