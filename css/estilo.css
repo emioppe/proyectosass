@@ -54,10 +54,6 @@
   font-size: 45px;
   padding: 20px; }
 
-.titulo h1 a:hover {
-  cursor: pointer;
-  transform: translateY(-4px); }
-
 .navbar a {
   font-family: harrington;
   font-size: 25px; }
@@ -65,14 +61,10 @@
 .navbar a:hover {
   cursor: pointer;
   transform: translateY(-4px);
-  /*se mueve hacia arriba cuando paso el mause*/
   background-image: linear-gradient(to top right, #3b073b, #3737e6);
   -webkit-background-clip: text;
-  /*el color de fondo se pega al texto*/
   background-clip: text;
-  /*para soportar diferentes versiones de navegadores*/
-  -webkit-text-fill-color: transparent;
-  /*las lineas de fondo son transparentes*/ }
+  -webkit-text-fill-color: transparent; }
 
 /*MAIN*/
 main {
@@ -138,12 +130,12 @@ footer {
   padding: 5px; }
 
 .redessociales li a, .redessociales li .wsapp li a {
-  color: #fafafa;
+  color: white;
   text-decoration: none;
   font-size: 20px; }
 
 .redessociales li .wsapp {
-  color: #fafafa;
+  color: white;
   font-size: 20px; }
 
 .redessociales li a:hover {

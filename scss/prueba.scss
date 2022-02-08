@@ -8,7 +8,7 @@
 /*variables sass*/
 
 /*cambiar el color de las redes sociales del footer*/
-$colorredessociales:rgb(250, 250, 250);
+$colorredessociales:white;
 
 
 /*cambiar el color de fonde del MAIN*/
@@ -94,34 +94,38 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      src: url(../HARRINGT.TTF); }
    
    /*MENU*/
-   .titulo h1 a {
+    .titulo h1 a {
        
      font-family: harrington;
      font-size: 45px;
-    padding: 20px; }
+     padding: 20px; }
+
    
-     .titulo h1 a:hover{
+     @mixin titulo-h1-a-hover{
+              
        cursor: pointer;
-       transform: translateY(-4px) ;
+    transform: translateY(-4px);
+    background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color:transparent;
        
      }
    
-   .navbar a {
+
+     .navbar a {
+       
      font-family: harrington;
      font-size: 25px;
      
    }
    
-   .navbar a:hover {
-     cursor: pointer;
-    transform: translateY(-4px);/*se mueve hacia arriba cuando paso el mause*/
-    background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
-     -webkit-background-clip: text;/*el color de fondo se pega al texto*/
-     background-clip: text;/*para soportar diferentes versiones de navegadores*/
-     -webkit-text-fill-color:transparent;/*las lineas de fondo son transparentes*/
+    .navbar a:hover {
+              @include titulo-h1-a-hover;
+
      
    }
-
+     
    
    
    /*MAIN*/
@@ -202,16 +206,16 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
        color: $colorredessociales;
        text-decoration: none;
        font-size: 20px;
+      
       }
-
           .redessociales li .wsapp {
 
-             @extend .redessociales  ;
+             @extend .redessociales;
              color: $colorredessociales;
              font-size: 20px;
-      }
+            }
    
-   
+    
        .redessociales li a:hover {
          cursor: pointer;
         transform: translateY(-4px);
@@ -219,10 +223,11 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
         
        
        
-       }
+         }
    
    .page {
      text-align: center;
      font-family: harrington;
-     font-size: 20px; }
-   
+     font-size: 20px;
+     }
+    
