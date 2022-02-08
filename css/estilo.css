@@ -1,23 +1,17 @@
 @charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px; }
+
 /*variables sass*/
 /*cambiar el color de las redes sociales del footer*/
 /*cambiar el color de fonde del MAIN*/
-/*cambiar el tamaño de las fotos*/
+/*cambiar el tamaño de todas las fotos*/
 /*hover en las fotos*/
+/*EXTEND DEL FOMRULARIO DE CONTACTOS*/
 /*@import"nav_color.scss";*/
-/*@import"botones_color.css"/*
-
-
-
-
-
-
-* {
-     padding: 0px;
-     margin: 0px; }
-   
-   
-   /* BOTON WHATSAPP*/
+/*@import"botones_color.css"*/
+/* BOTON WHATSAPP*/
 .container-boton {
   background-color: #2e6329;
   border: 1px solid #fff;
@@ -46,7 +40,7 @@
 
 /*HEADER*/
 .navbar {
-  height: 120px;
+  height: 130px;
   font-size: 19px; }
 
 /*LOGO*/
@@ -82,7 +76,7 @@
 
 /*MAIN*/
 main {
-  background-color: #f7e5e5;
+  background-color: #f6f6f6;
   height: 100%;
   width: 100%; }
 
@@ -93,11 +87,11 @@ main {
   gap: 60px;
   justify-content: space-around;
   padding: 5rem 3rem 5rem 3rem; }
+  #galeria img:hover {
+    transform: translateY(-10px);
+    box-shadow: #26394d 0px 20px 30px -10px; }
 
-#galeria img:hover {
-  transform: translateY(-10px);
-  box-shadow: #26394d 0px 20px 30px -10px; }
-
+/*TAMAÑO DE TODAS LAS IMAGENES*/
 .imagenes {
   width: 250px;
   height: 250px; }
@@ -140,16 +134,16 @@ footer {
   color: white;
   padding: 10px; }
 
-.redessociales li {
+.redessociales li, .redessociales li .wsapp li {
   padding: 5px; }
 
-.redessociales li a {
-  color: #f8faf8;
+.redessociales li a, .redessociales li .wsapp li a {
+  color: #fafafa;
   text-decoration: none;
   font-size: 20px; }
 
 .redessociales li .wsapp {
-  color: #f8faf8;
+  color: #fafafa;
   font-size: 20px; }
 
 .redessociales li a:hover {

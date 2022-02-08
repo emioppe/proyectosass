@@ -1,17 +1,24 @@
 
+* {
+  padding: 0px;
+  margin: 0px; }
+
+
+
 /*variables sass*/
 
 /*cambiar el color de las redes sociales del footer*/
-$colorredessociales:rgb(248, 250, 248);
+$colorredessociales:rgb(250, 250, 250);
 
 
 /*cambiar el color de fonde del MAIN*/
-$maincolor:rgb(247, 229, 229);
+$maincolor:rgb(246, 246, 246);
 
 
-/*cambiar el tamaño de las fotos*/
-$tamañoimagenes:width 250px;
-$tamañoimagenes:height 250px;
+/*cambiar el tamaño de todas las fotos*/
+$imgancho: 250px;
+$imgalto:250px;
+
 
 
 /*hover en las fotos*/
@@ -20,18 +27,25 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
 
 
 
+/*EXTEND DEL FOMRULARIO DE CONTACTOS*/
+
+
+
+
+
 /*@import"nav_color.scss";*/
 
-/*@import"botones_color.css"/*
+
+
+
+/*@import"botones_color.css"*/
 
 
 
 
 
 
-* {
-     padding: 0px;
-     margin: 0px; }
+
    
    
    /* BOTON WHATSAPP*/
@@ -71,7 +85,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
    
    /*HEADER*/
    .navbar {
-     height: 120px;
+     height: 130px;
      font-size: 19px; }
    
    /*LOGO*/
@@ -96,9 +110,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      font-family: harrington;
      font-size: 25px;
      
-     
    }
-   
    
    .navbar a:hover {
      cursor: pointer;
@@ -108,8 +120,9 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      background-clip: text;/*para soportar diferentes versiones de navegadores*/
      -webkit-text-fill-color:transparent;/*las lineas de fondo son transparentes*/
      
-   
    }
+
+   
    
    /*MAIN*/
    main {
@@ -125,18 +138,18 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      gap: 60px;
      justify-content: space-around;
      padding: 5rem 3rem 5rem 3rem; 
-     
-     
+        & img:hover{
+               transform:$hover_fotos;
+               box-shadow: #26394d 0px 20px 30px -10px;  
+     }
+       
 }
-   
-   #galeria img:hover {
-     transform:$hover_fotos;
-     box-shadow: #26394d 0px 20px 30px -10px;  
- }
-   
+
+
+   /*TAMAÑO DE TODAS LAS IMAGENES*/
    .imagenes {
-     width: 250px;
-     height: 250px;
+     width: $imgancho;
+     height: $imgalto;
  }
    
    .slide {
@@ -191,9 +204,11 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
        font-size: 20px;
       }
 
-     .redessociales li .wsapp {
-       color: $colorredessociales;
-       font-size: 20px;
+          .redessociales li .wsapp {
+
+             @extend .redessociales  ;
+             color: $colorredessociales;
+             font-size: 20px;
       }
    
    
