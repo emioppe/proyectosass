@@ -52,7 +52,7 @@
 .titulo h1 a {
   font-family: harrington;
   font-size: 40px;
-  margin: 20px; }
+  padding: 20px; }
 
 .titulo h1 a:hover {
   cursor: pointer;
