@@ -86,7 +86,9 @@ main {
 /*TAMAÑO DE TODAS LAS IMAGENES*/
 .imagenes {
   width: 250px;
-  height: 250px; }
+  height: 250px;
+  /*border-radius: 30px;*/
+  /*border:solid 3px black;*/ }
 
 .slide {
   margin-top: 10px; }
