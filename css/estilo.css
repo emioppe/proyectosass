@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px; }
@@ -65,6 +65,15 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+/*REDES SOCIALES DEL HEADER*/
+.redesheader {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
+.redesheaderface a {
+  padding: 30px; }
 
 /*MAIN*/
 main {

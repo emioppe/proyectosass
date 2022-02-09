@@ -126,7 +126,18 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      
    }
      
-   
+/*REDES SOCIALES DEL HEADER*/
+   .redesheader{
+                 display: flex;
+                 justify-content:center;
+                 list-style-type: none;
+                 
+   }
+   .redesheaderface a{
+                 padding: 30px;
+                 
+   }
+
    
    /*MAIN*/
    main {
@@ -212,7 +223,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
       }
           .redessociales li .wsapp {
 
-             @extend .redessociales;
+             @extend .redessociales ;
              color: $colorredessociales;
              font-size: 20px;
             }
