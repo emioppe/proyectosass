@@ -39,7 +39,8 @@
 /*HEADER*/
 .navbar {
   height: 120px;
-  font-size: 19px; }
+  font-size: 19px;
+  border: solid 1px black; }
 
 /*LOGO*/
 @font-face {
@@ -102,6 +103,18 @@ main {
   background-color: #f6f6f6;
   height: 100%;
   width: 100%; }
+
+/*FOTOS DEL CARRUSEL*/
+#carouselExampleControls {
+  display: flex;
+  margin: 0%;
+  justify-content: center;
+  height: auto;
+  background-color: black; }
+
+.carousel-inner {
+  width: 450px;
+  height: 100%; }
 
 /*FOTOS*/
 #galeria {

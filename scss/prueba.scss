@@ -73,7 +73,10 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
    /*HEADER*/
    .navbar {
      height: 120px;
-     font-size: 19px; }
+     font-size: 19px;
+     border:solid 1px black; 
+    }
+
    
    /*LOGO*/
    @font-face {
@@ -88,7 +91,6 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      padding: 20px; 
       }
 
-   
       .navbar-brand:hover{      
        cursor: pointer;
       transform: translateY(-4px) !important;
@@ -98,6 +100,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      -webkit-text-fill-color:transparent !important;
        }
    
+
      .navbar-nav a {
      font-family: harrington;
      font-size: 25px;
@@ -134,6 +137,21 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      width: 100%;
  }
    
+ /*FOTOS DEL CARRUSEL*/
+ #carouselExampleControls{  display: flex;
+                               margin: 0%;
+                             justify-content: center;
+                             height: auto;
+                             background-color: black;
+                             
+ }
+
+ .carousel-inner{  
+            width: 450px;
+            height: 100%;               
+ }
+
+
    /*FOTOS*/
    #galeria {
      display: flex;
