@@ -7,10 +7,8 @@
 /*cambiar el color de las redes sociales del footer*/
 /*cambiar el color de fonde del MAIN*/
 /*cambiar el tamaño de todas las fotos*/
+/* aplicacion del hover*/
 /*hover en las fotos*/
-/*EXTEND DEL FOMRULARIO DE CONTACTOS*/
-/*@import"nav_color.scss";*/
-/*@import"botones_color.css"*/
 /* BOTON WHATSAPP*/
 .container-boton {
   background-color: #2e6329;
@@ -49,16 +47,24 @@
   src: url(../HARRINGT.TTF); }
 
 /*MENU*/
-.titulo h1 a {
+.navbar-brand {
   font-family: harrington;
   font-size: 45px;
   padding: 20px; }
 
-.navbar a {
+.navbar-brand:hover {
+  cursor: pointer;
+  transform: translateY(-4px) !important;
+  background-image: linear-gradient(to top right, #3b073b, #3737e6) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important; }
+
+.navbar-nav a {
   font-family: harrington;
   font-size: 25px; }
 
-.navbar a:hover {
+.navbar-nav a:hover {
   cursor: pointer;
   transform: translateY(-4px);
   background-image: linear-gradient(to top right, #3b073b, #3737e6);
@@ -74,6 +80,22 @@
 
 .redesheaderface a {
   padding: 30px; }
+
+.redesheaderface a svg:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  background-image: linear-gradient(to top right, #3b073b, #3737e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.redesheaderinst a svg:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+  background-image: linear-gradient(to top right, #3b073b, #3737e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 /*MAIN*/
 main {
@@ -95,29 +117,12 @@ main {
 /*TAMAÑO DE TODAS LAS IMAGENES*/
 .imagenes {
   width: 250px;
-  height: 250px;
-  /*border-radius: 30px;*/
-  /*border:solid 3px black;*/ }
+  height: 250px; }
 
 .slide {
   margin-top: 10px; }
 
-/*CONTACTOS*/
-.logoinsta {
-  padding-left: 80vh; }
-
-.logoinsta:hover {
-  cursor: pointer;
-  transform: translateY(-4px); }
-
-.logoface {
-  padding-left: 20px; }
-
-.logoface:hover {
-  cursor: pointer;
-  transform: translateY(-4px); }
-
-/*FORMULARIO*/
+/*FORMULARIO DE CONTACTOS*/
 #contenedor-formulario {
   padding: 20px;
   margin: 30px;
@@ -133,21 +138,21 @@ main {
 footer {
   width: 100%;
   background-color: black;
-  height: 200px;
+  height: 220px;
   color: white;
   padding: 10px; }
 
-.redessociales li, .redessociales li .wsapp li {
+.redessociales li {
   padding: 5px; }
 
-.redessociales li a, .redessociales li .wsapp li a {
+.redessociales li a {
   color: white;
   text-decoration: none;
-  font-size: 20px; }
+  font-size: 15px; }
 
 .redessociales li .wsapp {
   color: white;
-  font-size: 20px; }
+  font-size: 15px; }
 
 .redessociales li a:hover {
   cursor: pointer;

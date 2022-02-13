@@ -3,8 +3,6 @@
   padding: 0px;
   margin: 0px; }
 
-
-
 /*variables sass*/
 
 /*cambiar el color de las redes sociales del footer*/
@@ -20,6 +18,18 @@ $imgancho: 250px;
 $imgalto:250px;
 
 
+/* aplicacion del hover*/
+@mixin hover {
+  cursor: pointer;
+  transform: translateY(-4px) ;
+  background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
+   -webkit-background-clip: text ;
+   background-clip: text ;
+   -webkit-text-fill-color:transparent;   
+
+  
+}
+
 
 /*hover en las fotos*/
 $hover_fotos:translateY(-10px);
@@ -27,30 +37,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
 
 
 
-/*EXTEND DEL FOMRULARIO DE CONTACTOS*/
-
-
-
-
-
-/*@import"nav_color.scss";*/
-
-
-
-
-/*@import"botones_color.css"*/
-
-
-
-
-
-
-
-   
-   
    /* BOTON WHATSAPP*/
-  
-   
    .container-boton{
      background-color: #2e6329;
      border: 1px solid #fff;
@@ -94,37 +81,32 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      src: url(../HARRINGT.TTF); }
    
    /*MENU*/
-    .titulo h1 a {
+     .navbar-brand {
        
      font-family: harrington;
      font-size: 45px;
-     padding: 20px; }
+     padding: 20px; 
+      }
 
    
-     @mixin titulo-h1-a-hover{
-              
+      .navbar-brand:hover{      
        cursor: pointer;
-    transform: translateY(-4px);
-    background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
-     -webkit-background-clip: text;
-     background-clip: text;
-     -webkit-text-fill-color:transparent;
-       
-     }
+      transform: translateY(-4px) !important;
+      background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230))!important ;
+      -webkit-background-clip: text!important ;
+      background-clip: text !important ;
+     -webkit-text-fill-color:transparent !important;
+       }
    
-
-     .navbar a {
-       
+     .navbar-nav a {
      font-family: harrington;
      font-size: 25px;
-     
-   }
+      }
    
-    .navbar a:hover {
-              @include titulo-h1-a-hover;
+    .navbar-nav a:hover {
+                 @include hover;
+      }
 
-     
-   }
      
 /*REDES SOCIALES DEL HEADER*/
    .redesheader{
@@ -134,11 +116,17 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                  
    }
    .redesheaderface a{
-                 padding: 30px;
-                 
+                 padding: 30px;         
+   }
+   .redesheaderface a svg:hover{
+                 @include hover;
    }
 
-   
+   .redesheaderinst a svg:hover{
+                 @include hover;
+   }
+
+
    /*MAIN*/
    main {
      background-color: $maincolor;
@@ -158,41 +146,21 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                box-shadow: #26394d 0px 20px 30px -10px;  
      }
        
-}
+  }
 
 
    /*TAMAÑO DE TODAS LAS IMAGENES*/
    .imagenes {
      width: $imgancho;
      height: $imgalto;
-     /*border-radius: 30px;*/
-/*border:solid 3px black;*/
- }
+     
+    }
    
    .slide {
      margin-top: 10px; }
    
-   /*CONTACTOS*/
-   .logoinsta {
-     padding-left: 80vh;
-     }
-
-     .logoinsta:hover{
-      cursor: pointer;
-       transform: translateY(-4px) ;
-       
-     }
-
-   .logoface {
-     padding-left: 20px; 
-    }
-    .logoface:hover{
-      cursor: pointer;
-      transform: translateY(-4px) ;
-      
-    }
    
-   /*FORMULARIO*/
+   /*FORMULARIO DE CONTACTOS*/
    #contenedor-formulario {
      padding: 20px;
      margin: 30px;
@@ -208,7 +176,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
    footer {
      width: 100%;
      background-color: black;
-     height: 200px;
+     height: 220px;
      color: white;
      padding: 10px; }
    
@@ -218,14 +186,12 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      .redessociales li a {
        color: $colorredessociales;
        text-decoration: none;
-       font-size: 20px;
-      
+       font-size: 15px;
+       
       }
           .redessociales li .wsapp {
-
-             @extend .redessociales ;
-             color: $colorredessociales;
-             font-size: 20px;
+                         color: $colorredessociales;
+                         font-size: 15px;
             }
    
     
@@ -233,9 +199,6 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
          cursor: pointer;
         transform: translateY(-4px);
         -webkit-text-fill-color:rgb(231, 14, 14);
-        
-       
-       
          }
    
    .page {
