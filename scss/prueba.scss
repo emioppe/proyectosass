@@ -70,6 +70,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      }
    }
    
+
    /*HEADER*/
    .navbar {
      height: 120px;
@@ -110,7 +111,21 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                  @include hover;
       }
 
-     
+      /*MENU HAMBURGUESA*/
+      @media only screen and (max-width:991px){
+
+        .navbar-nav {
+                    padding: 20px;
+                    width: 300px;
+                    background-color: red;
+                    position: absolute ;
+                    z-index:10 ;
+                    border: solid 1px black;
+                    
+      }
+    }
+
+
 /*REDES SOCIALES DEL HEADER*/
    .redesheader{
                  display: flex;
