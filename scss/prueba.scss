@@ -10,7 +10,7 @@ $colorredessociales:white;
 
 
 /*cambiar el color de fonde del MAIN*/
-$maincolor:rgb(246, 246, 246);
+$maincolor:white;
 
 
 /*cambiar el tamaño de todas las fotos*/
@@ -84,12 +84,15 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      font-family: harrington;
      src: url(../HARRINGT.TTF); }
    
-   /*MENU*/
+   /*MENU DEL LOGO*/
      .navbar-brand {
-       
-     font-family: harrington;
-     font-size: 45px;
-     padding: 20px; 
+           background-image: linear-gradient(to top right, rgb(37, 3, 37), rgb(47, 47, 80));
+           background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color:transparent;
+          font-family: harrington;
+          font-size: 45px;
+           padding: 20px; 
       }
 
       .navbar-brand:hover{      
@@ -114,13 +117,19 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
       /*MENU HAMBURGUESA*/
       @media only screen and (max-width:991px){
 
-        .navbar-nav {
-                    padding: 20px;
-                    width: 300px;
-                    background-color: red;
-                    position: absolute ;
+        .navbar-nav { 
+                      
+                      margin: 60px ;
+                      margin-left: 0;
+                    padding:20px ;
+                    align-items: center;
+                    width: 100%;
+                    background:linear-gradient(to bottom right,rgb(158, 121, 121) , rgb(235, 58, 58));
+                    position: fixed ;
+                    left: 0;
+                    top: 60px;
                     z-index:10 ;
-                    border: solid 1px black;
+                    
                     
       }
     }
@@ -153,17 +162,47 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
  }
    
  /*FOTOS DEL CARRUSEL*/
- #carouselExampleControls{  display: flex;
-                               margin: 0%;
-                             justify-content: center;
-                             height: auto;
-                             background-color: black;
+
+ #carouselExampleSlidesOnly{ 
+                              display: flex;
+                              padding: 80px;
+                              
+                              flex-wrap: wrap;
+                             justify-content: start;
+                             
+                             height: 100%;
+                             background-color: rgb(247, 242, 242);
+                            
                              
  }
 
+
+.cuadrado{
+           display: flex;
+           flex-wrap: wrap;
+           margin-left: 100px;
+           margin-top: 20px;
+           width: 50%;
+           height: 250px;
+           background-color: #ceeccb;
+           
+}
+
+.texto{
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          width: 100%;
+          font-size: 20px;
+}
+                
+
  .carousel-inner{  
-            width: 450px;
-            height: 100%;               
+                 margin-left: 20px;
+            width: 300px;
+            height: 300px;   
+             border-radius: 50%;
+               border: solid 1px black;    
  }
 
 

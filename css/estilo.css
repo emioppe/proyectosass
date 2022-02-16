@@ -47,8 +47,12 @@
   font-family: harrington;
   src: url(../HARRINGT.TTF); }
 
-/*MENU*/
+/*MENU DEL LOGO*/
 .navbar-brand {
+  background-image: linear-gradient(to top right, #250325, #2f2f50);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: harrington;
   font-size: 45px;
   padding: 20px; }
@@ -76,12 +80,16 @@
 /*MENU HAMBURGUESA*/
 @media only screen and (max-width: 991px) {
   .navbar-nav {
+    margin: 60px;
+    margin-left: 0;
     padding: 20px;
-    width: 300px;
-    background-color: red;
-    position: absolute;
-    z-index: 10;
-    border: solid 1px black; } }
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom right, #9e7979, #eb3a3a);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 10; } }
 
 /*REDES SOCIALES DEL HEADER*/
 .redesheader {
@@ -110,21 +118,41 @@
 
 /*MAIN*/
 main {
-  background-color: #f6f6f6;
+  background-color: white;
   height: 100%;
   width: 100%; }
 
 /*FOTOS DEL CARRUSEL*/
-#carouselExampleControls {
+#carouselExampleSlidesOnly {
   display: flex;
-  margin: 0%;
-  justify-content: center;
-  height: auto;
-  background-color: black; }
+  padding: 80px;
+  flex-wrap: wrap;
+  justify-content: start;
+  height: 100%;
+  background-color: #f7f2f2; }
+
+.cuadrado {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 50%;
+  height: 250px;
+  background-color: #ceeccb; }
+
+.texto {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  font-size: 20px; }
 
 .carousel-inner {
-  width: 450px;
-  height: 100%; }
+  margin-left: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: solid 1px black; }
 
 /*FOTOS*/
 #galeria {
