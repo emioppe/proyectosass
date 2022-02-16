@@ -122,25 +122,18 @@ main {
   height: 100%;
   width: 100%; }
 
-/*FOTOS DEL CARRUSEL*/
+/*CARRUSEL + TEXTO*/
 #carouselExampleSlidesOnly {
   display: flex;
-  padding: 80px;
+  padding-top: 20px;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   height: 100%;
-  background-color: #f7f2f2; }
-
-.cuadrado {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 100px;
-  margin-top: 20px;
-  width: 50%;
-  height: 250px;
-  background-color: #ceeccb; }
+  background-color: #f7f2f2;
+  border-radius: 30px; }
 
 .texto {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -149,8 +142,8 @@ main {
 
 .carousel-inner {
   margin-left: 20px;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: solid 1px black; }
 
