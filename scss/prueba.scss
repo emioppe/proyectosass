@@ -125,13 +125,11 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                     align-items: center;
                     width: 100%;
                     background:linear-gradient(to bottom right,rgb(158, 121, 121) , rgb(235, 58, 58));
-                    position: fixed ;
+                    position: absolute ;
                     left: 0;
                     top: 60px;
                     z-index: 10;
-                    
-                    
-                    
+                               
       }
     }
 
@@ -161,40 +159,47 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      height: 100%;
      width: 100%;
  }
+
+
+ .txt-usu{  
+            margin-top: 30px;
+            font-family: harrington;
+           font-size: 50px;
+           text-align: center;
+ }
    
- /*CARRUSEL + TEXTO*/
+ /*CARRUSEL*/
+ #carouselExampleFade{ 
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 50px;
+                        background-color: rgb(15, 15, 15);
+                        height: 450px;
+                        
+ }
+
+ .carousel-inner{
+                  width: 300px;
+                  height: 350px;
+ }
+
+/*FOTOS DE LA PAGINA PRINCIPAL*/
+ .img-principal{ 
+              padding-top: 20px;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 10px;         
+              
+ }
+
+
+ .img-new{
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+ }
  
-  #carouselExampleSlidesOnly{ 
-    display: flex;
-    padding-top: 20px;
-    flex-wrap: wrap;
-   justify-content: center;
-   height: 100%;
-   background-color: rgb(247, 242, 242);
-  border-radius: 30px;
-   
-  }
-  
-  
-  .texto{
-     margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 100%;
-  font-size: 20px;
-  }
-  
-  
-  .carousel-inner{  
-  margin-left: 20px;
-  width: 150px;
-  height: 150px;   
-  border-radius: 50%;
-  border: solid 1px black;    
-  }
-
-
 
    /*FOTOS*/
    #galeria {
@@ -228,7 +233,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      margin: 30px;
      background: white;
      border-radius: 10px;
-     width: 80%;
+     width: 85%;
      border: 1px solid black; }
    
    #titulo-formulario {
