@@ -5,6 +5,7 @@
 
 /*variables sass*/
 /*cambiar el color de las redes sociales del footer*/
+/*Cambiar el color del header nav*/
 /*cambiar el color de fonde del MAIN*/
 /*cambiar el tamaño de todas las fotos*/
 /* aplicacion del hover*/
@@ -42,6 +43,9 @@
   font-size: 19px;
   border: solid 1px black; }
 
+.nav-header {
+  background: linear-gradient(to bottom right, #ecaeae, #e21e1e); }
+
 /*LOGO*/
 @font-face {
   font-family: harrington;
@@ -77,19 +81,48 @@
   background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-/*MENU HAMBURGUESA*/
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 515px) {
+  .navbar {
+    height: 120px;
+    font-size: 20px; }
+  .navbar-brand {
+    background-image: linear-gradient(to top right, #1b021b, #04042a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: harrington;
+    font-size: 30px; }
   .navbar-nav {
-    margin: 60px;
+    margin: 59px;
     margin-left: 0;
     padding: 20px;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to bottom right, #9e7979, #eb3a3a);
+    background: linear-gradient(to bottom right, #ecaeae, #e21e1e);
     position: absolute;
     left: 0;
     top: 60px;
-    z-index: 10; } }
+    z-index: 10;
+    transition: all 0.5s; }
+  .redesheaderface a {
+    display: none; }
+  .redesheaderinst a {
+    display: none; } }
+
+/*MENU HAMBURGUESA*/
+@media only screen and (max-width: 991px) {
+  .navbar-nav {
+    margin: 59px;
+    margin-left: 0;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ecaeae, #e21e1e);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 10;
+    transition: all 0.5s; } }
 
 /*REDES SOCIALES DEL HEADER*/
 .redesheader {
@@ -148,12 +181,13 @@ main {
   justify-content: center;
   gap: 10px; }
 
+/*FOTOS DEL INDEX*/
 .img-new {
   width: 300px;
   height: 300px;
   border-radius: 10px; }
 
-/*FOTOS*/
+/*FOTOS DE CARTERAS MOCHILAS BOLSOS*/
 #galeria {
   display: flex;
   flex-wrap: wrap;
@@ -167,7 +201,8 @@ main {
 /*TAMAÑO DE TODAS LAS IMAGENES*/
 .imagenes {
   width: 250px;
-  height: 250px; }
+  height: 250px;
+  cursor: pointer; }
 
 .slide {
   margin-top: 10px; }

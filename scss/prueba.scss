@@ -8,6 +8,9 @@
 /*cambiar el color de las redes sociales del footer*/
 $colorredessociales:white;
 
+/*Cambiar el color del header nav*/
+$colornav: linear-gradient(to bottom right,rgb(236, 174, 174) , rgb(226, 30, 30));
+
 
 /*cambiar el color de fonde del MAIN*/
 $maincolor:white;
@@ -78,6 +81,9 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      border:solid 1px black; 
     }
 
+    .nav-header{
+         background:$colornav;
+    }
    
    /*LOGO*/
    @font-face {
@@ -114,23 +120,77 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                  @include hover;
       }
 
+
+   
+
+
+     @media only screen and (max-width:515px){
+
+        .navbar {
+          height: 120px;
+          font-size: 20px;
+        
+         
+         }       
+         
+         .navbar-brand {
+          background-image: linear-gradient(to top right, rgb(27, 2, 27), rgb(4, 4, 42));
+          background-clip: text;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color:transparent;
+         font-family: harrington;
+         font-size: 30px;
+          
+     }
+
+         .navbar-nav { 
+                      
+            margin: 59px ;
+            margin-left: 0;
+            padding:20px ;
+            align-items: center;
+            width: 100%;
+            background:$colornav;
+            position: absolute ;
+            left: 0;
+            top: 60px;
+            z-index: 10;
+            transition: all 0.5s;
+                             
+        }
+
+
+          .redesheaderface a{
+                          display: none;
+           }
+           .redesheaderinst a{
+                       display: none;
+          }
+
+
+    }
+
+
+
       /*MENU HAMBURGUESA*/
       @media only screen and (max-width:991px){
 
         .navbar-nav { 
                       
-                      margin: 60px ;
+                      margin: 59px ;
                       margin-left: 0;
                     padding:20px ;
                     align-items: center;
                     width: 100%;
-                    background:linear-gradient(to bottom right,rgb(158, 121, 121) , rgb(235, 58, 58));
+                    background:$colornav;
                     position: absolute ;
                     left: 0;
                     top: 60px;
                     z-index: 10;
-                               
+                    transition: all 0.5s;
+                                         
       }
+
     }
 
 
@@ -193,7 +253,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
               
  }
 
-
+/*FOTOS DEL INDEX*/
  .img-new{
           width: 300px;
           height: 300px;
@@ -201,7 +261,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
  }
  
 
-   /*FOTOS*/
+   /*FOTOS DE CARTERAS MOCHILAS BOLSOS*/
    #galeria {
      display: flex;
      flex-wrap: wrap;
@@ -220,6 +280,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
    .imagenes {
      width: $imgancho;
      height: $imgalto;
+     cursor: pointer;
      
     }
    
