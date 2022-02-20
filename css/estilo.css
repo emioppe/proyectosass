@@ -79,29 +79,27 @@
 
 .navbar-nav a:hover {
   cursor: pointer;
-  transform: translateY(-4px);
   background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-@media only screen and (min-width: 310px) and (max-width: 390px) {
+@media only screen and (min-width: 310px) and (max-width: 490px) {
   /*LOGO*/
-  .navbar {
-    height: 120px; }
+  .titulo {
+    padding-top: 20px; }
   .navbar-brand {
     background-image: linear-gradient(to top right, #010007, #010113);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: harrington;
-    font-size: 25px; } }
+    font-size: 30px; } }
 
-@media only screen and (min-width: 390px) and (max-width: 490px) {
+@media only screen and (min-width: 384px) and (max-width: 490px) {
   /*LOGO*/
-  .navbar {
-    height: 120px;
-    font-size: 30px; }
+  .titulo {
+    padding-top: 5px; }
   .navbar-brand {
     background-image: linear-gradient(to top right, #010007, #010113);
     background-clip: text;
@@ -144,7 +142,6 @@
 
 .redesheaderface a svg:hover {
   cursor: pointer;
-  transform: translateY(-4px);
   background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
   -webkit-background-clip: text;
   background-clip: text;
@@ -152,7 +149,6 @@
 
 .redesheaderinst a svg:hover {
   cursor: pointer;
-  transform: translateY(-4px);
   background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
   -webkit-background-clip: text;
   background-clip: text;
