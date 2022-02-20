@@ -129,15 +129,32 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                           
       }
 
-      @media only screen and (min-width:310px) and (max-width:490px){
+      /*REDES SOCIALES DEL HEADER*/
+   .redesheader{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    
+   }
+.redesheaderface a{
+    padding: 30px;         
+}
+.redesheaderface a svg:hover{
+  transform: translateY(-4px);
+}
 
-         /*LOGO*/
+.redesheaderinst a svg:hover{
+  transform: translateY(-4px);
+}
+
+
+      /*LOGO*/
+      @media only screen and (min-width:100px) and (max-width:490px){
 
   .titulo{
           padding-top: 20px;
   }
 
-    
         .navbar-brand {
                        
           background-image: $colormenu;
@@ -151,37 +168,6 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
    
 
       }
-
-
-     @media only screen and (min-width:384px) and (max-width:490px){
-      
-       /*LOGO*/
-     .titulo{
-             padding-top: 5px;
-     }
-
-         .navbar-brand {
-           
-          background-image: $colormenu;
-          background-clip: text;
-         -webkit-background-clip: text;
-         -webkit-text-fill-color:transparent;
-         font-family: harrington;
-         font-size: 33px;
-          
-     }
-
-
-          .redesheaderface a{
-                          display: none;
-           }
-           .redesheaderinst a{
-                       display: none;
-          }
-
-
-    }
-
 
 
       /*MENU DEL MENU HAMBURGUESA*/
@@ -211,26 +197,6 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
 
 
   }
-
-
-/*REDES SOCIALES DEL HEADER*/
-   .redesheader{
-                 display: flex;
-                 justify-content:center;
-                 list-style-type: none;
-                 
-   }
-   .redesheaderface a{
-                 padding: 30px;         
-   }
-   .redesheaderface a svg:hover{
-                 @include hover;
-   }
-
-   .redesheaderinst a svg:hover{
-                 @include hover;
-   }
-
 
    /*MAIN*/
    main {
@@ -295,7 +261,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
   }
 
 
-   /*TAMAÑO DE TODAS LAS IMAGENES*/
+   /*TAMAÑO DE TODAS LAS FOTOS DE CARTERAS BOLSOS MOCHILAS*/
    .imagenes {
      width: $imgancho;
      height: $imgalto;
@@ -333,12 +299,12 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      .redessociales li a {
        color: $colorredessociales;
        text-decoration: none;
-       font-size: 15px;
+       font-size: 17px;
        
       }
           .redessociales li .wsapp {
                          color: $colorredessociales;
-                         font-size: 15px;
+                         font-size: 17px;
             }
    
     
