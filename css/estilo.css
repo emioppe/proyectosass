@@ -6,9 +6,10 @@
 /*variables sass*/
 /*cambiar el color de las redes sociales del footer*/
 /*Cambiar el color del header nav*/
-/*cambiar el color de fonde del MAIN*/
-/*cambiar el tamaño de todas las fotos*/
-/* aplicacion del hover*/
+/*color del logo y menus*/
+/*color del hover logo y menus*/
+/*cambiar el tamaño de todas las fotos de carteras mochilas bolsos*/
+/* aplicacion del hover a los menus del header*/
 /*hover en las fotos*/
 /* BOTON WHATSAPP*/
 .container-boton {
@@ -40,20 +41,22 @@
 /*HEADER*/
 .navbar {
   height: 120px;
-  font-size: 19px;
-  border: solid 1px black; }
+  font-size: 19px; }
 
 .nav-header {
-  background: linear-gradient(to bottom right, #ecaeae, #e21e1e); }
+  background: linear-gradient(to bottom right, #3330ec, #e4d4d4); }
 
 /*LOGO*/
 @font-face {
   font-family: harrington;
   src: url(../HARRINGT.TTF); }
 
-/*MENU DEL LOGO*/
+/*MENU LOGO*/
+.logo {
+  border: solid 2px black; }
+
 .navbar-brand {
-  background-image: linear-gradient(to top right, #250325, #2f2f50);
+  background-image: linear-gradient(to top right, #010007, #010113);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,12 +66,13 @@
 
 .navbar-brand:hover {
   cursor: pointer;
-  transform: translateY(-4px) !important;
-  background-image: linear-gradient(to top right, #3b073b, #3737e6) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important; }
+  transform: translateY(-4px);
+  background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
+/*MENUS DEL HEADER*/
 .navbar-nav a {
   font-family: harrington;
   font-size: 25px; }
@@ -76,29 +80,49 @@
 .navbar-nav a:hover {
   cursor: pointer;
   transform: translateY(-4px);
-  background-image: linear-gradient(to top right, #3b073b, #3737e6);
+  background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-@media only screen and (max-width: 515px) {
+@media only screen and (min-width: 310px) and (max-width: 390px) {
+  /*LOGO*/
   .navbar {
-    height: 120px;
-    font-size: 20px; }
+    height: 120px; }
   .navbar-brand {
-    background-image: linear-gradient(to top right, #1b021b, #04042a);
+    background-image: linear-gradient(to top right, #010007, #010113);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: harrington;
+    font-size: 25px; } }
+
+@media only screen and (min-width: 390px) and (max-width: 490px) {
+  /*LOGO*/
+  .navbar {
+    height: 120px;
     font-size: 30px; }
+  .navbar-brand {
+    background-image: linear-gradient(to top right, #010007, #010113);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: harrington;
+    font-size: 33px; }
+  .redesheaderface a {
+    display: none; }
+  .redesheaderinst a {
+    display: none; } }
+
+/*MENU DEL MENU HAMBURGUESA*/
+@media only screen and (max-width: 991px) {
   .navbar-nav {
-    margin: 59px;
+    margin: 60px;
     margin-left: 0;
     padding: 20px;
     align-items: center;
     width: 100%;
-    background: linear-gradient(to bottom right, #ecaeae, #e21e1e);
+    background: linear-gradient(to bottom right, #3330ec, #e4d4d4);
     position: absolute;
     left: 0;
     top: 60px;
@@ -108,21 +132,6 @@
     display: none; }
   .redesheaderinst a {
     display: none; } }
-
-/*MENU HAMBURGUESA*/
-@media only screen and (max-width: 991px) {
-  .navbar-nav {
-    margin: 59px;
-    margin-left: 0;
-    padding: 20px;
-    align-items: center;
-    width: 100%;
-    background: linear-gradient(to bottom right, #ecaeae, #e21e1e);
-    position: absolute;
-    left: 0;
-    top: 60px;
-    z-index: 10;
-    transition: all 0.5s; } }
 
 /*REDES SOCIALES DEL HEADER*/
 .redesheader {
@@ -136,7 +145,7 @@
 .redesheaderface a svg:hover {
   cursor: pointer;
   transform: translateY(-4px);
-  background-image: linear-gradient(to top right, #3b073b, #3737e6);
+  background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -144,7 +153,7 @@
 .redesheaderinst a svg:hover {
   cursor: pointer;
   transform: translateY(-4px);
-  background-image: linear-gradient(to top right, #3b073b, #3737e6);
+  background-image: linear-gradient(to top right, #f0e9f0, #f0f0f3);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }

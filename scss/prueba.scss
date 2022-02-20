@@ -9,28 +9,29 @@
 $colorredessociales:white;
 
 /*Cambiar el color del header nav*/
-$colornav: linear-gradient(to bottom right,rgb(236, 174, 174) , rgb(226, 30, 30));
+$colornav: linear-gradient(to bottom right,rgb(51, 48, 236) , rgb(228, 212, 212));
+
+/*color del logo y menus*/
+$colormenu:linear-gradient(to top right, rgb(1, 0, 7), rgb(1, 1, 19));
+
+/*color del hover logo y menus*/
+$colormenuhover:linear-gradient(to top right, rgb(240, 233, 240), rgb(240, 240, 243));
 
 
-/*cambiar el color de fonde del MAIN*/
-$maincolor:white;
-
-
-/*cambiar el tamaño de todas las fotos*/
+/*cambiar el tamaño de todas las fotos de carteras mochilas bolsos*/
 $imgancho: 250px;
 $imgalto:250px;
 
 
-/* aplicacion del hover*/
+/* aplicacion del hover a los menus del header*/
 @mixin hover {
   cursor: pointer;
   transform: translateY(-4px) ;
-  background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230));
+  background-image: $colormenuhover;
    -webkit-background-clip: text ;
    background-clip: text ;
    -webkit-text-fill-color:transparent;   
-
-  
+    
 }
 
 
@@ -78,7 +79,8 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
    .navbar {
      height: 120px;
      font-size: 19px;
-     border:solid 1px black; 
+      
+     
     }
 
     .nav-header{
@@ -90,74 +92,86 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      font-family: harrington;
      src: url(../HARRINGT.TTF); }
    
-   /*MENU DEL LOGO*/
+   /*MENU LOGO*/
+
+   .logo{
+         border: solid 2px black;
+   }
      .navbar-brand {
-           background-image: linear-gradient(to top right, rgb(37, 3, 37), rgb(47, 47, 80));
+           background-image: $colormenu;
            background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color:transparent;
           font-family: harrington;
           font-size: 45px;
            padding: 20px; 
-      }
+          }
 
       .navbar-brand:hover{      
        cursor: pointer;
-      transform: translateY(-4px) !important;
-      background-image: linear-gradient(to top right, rgb(59, 7, 59), rgb(55, 55, 230))!important ;
-      -webkit-background-clip: text!important ;
-      background-clip: text !important ;
-     -webkit-text-fill-color:transparent !important;
+      transform: translateY(-4px) ;
+      background-image: $colormenuhover ;
+      -webkit-background-clip: text ;
+      background-clip: text  ;
+     -webkit-text-fill-color:transparent ;
        }
-   
+      
 
+       /*MENUS DEL HEADER*/
      .navbar-nav a {
      font-family: harrington;
      font-size: 25px;
+     
       }
    
     .navbar-nav a:hover {
                  @include hover;
+                          
       }
 
+      @media only screen and (min-width:310px) and (max-width:390px){
 
-   
+         /*LOGO*/
+        .navbar{
+                 height: 120px;
+                 
+        }
 
-
-     @media only screen and (max-width:515px){
-
-        .navbar {
-          height: 120px;
-          font-size: 20px;
-        
-         
-         }       
-         
-         .navbar-brand {
-          background-image: linear-gradient(to top right, rgb(27, 2, 27), rgb(4, 4, 42));
+        .navbar-brand {
+           
+          background-image: $colormenu;
           background-clip: text;
          -webkit-background-clip: text;
          -webkit-text-fill-color:transparent;
          font-family: harrington;
-         font-size: 30px;
+         font-size: 25px;
+
+        }
+   
+
+      }
+
+
+     @media only screen and (min-width:390px) and (max-width:490px){
+      
+       /*LOGO*/
+        .navbar {
+          height: 120px;
+          font-size: 30px;
+          
+        
+         }       
+   
+         .navbar-brand {
+           
+          background-image: $colormenu;
+          background-clip: text;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color:transparent;
+         font-family: harrington;
+         font-size: 33px;
           
      }
-
-         .navbar-nav { 
-                      
-            margin: 59px ;
-            margin-left: 0;
-            padding:20px ;
-            align-items: center;
-            width: 100%;
-            background:$colornav;
-            position: absolute ;
-            left: 0;
-            top: 60px;
-            z-index: 10;
-            transition: all 0.5s;
-                             
-        }
 
 
           .redesheaderface a{
@@ -172,12 +186,12 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
 
 
 
-      /*MENU HAMBURGUESA*/
+      /*MENU DEL MENU HAMBURGUESA*/
       @media only screen and (max-width:991px){
 
         .navbar-nav { 
                       
-                      margin: 59px ;
+                      margin: 60px ;
                       margin-left: 0;
                     padding:20px ;
                     align-items: center;
@@ -190,8 +204,15 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
                     transition: all 0.5s;
                                          
       }
+      .redesheaderface a{
+               display: none;
+     }
+     .redesheaderinst a{
+            display: none;
+     }
 
-    }
+
+  }
 
 
 /*REDES SOCIALES DEL HEADER*/
@@ -215,7 +236,7 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
 
    /*MAIN*/
    main {
-     background-color: $maincolor;
+     background-color: white;
      height: 100%;
      width: 100%;
  }
@@ -334,4 +355,6 @@ $sombra_fotos: box-shadow #26394d 0px 20px 30px -10px;
      font-family: harrington;
      font-size: 20px;
      }
+
+     
     
