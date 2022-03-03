@@ -89,14 +89,17 @@
   justify-content: center;
   list-style-type: none; }
 
+.redesheader {
+  margin-right: 20px; }
+
 .redesheaderface a {
   padding: 30px; }
 
 .redesheaderface a svg:hover {
-  transform: translateY(-4px); }
+  transform: scale(1.3); }
 
 .redesheaderinst a svg:hover {
-  transform: translateY(-4px); }
+  transform: scale(1.3); }
 
 /*LOGO*/
 @media only screen and (min-width: 100px) and (max-width: 390px) {
@@ -262,32 +265,11 @@ main {
 #titulo-formulario {
   color: black; }
 
-/*FOTTER Y REDES SOCIALES*/
 footer {
   width: 100%;
   background-color: black;
-  height: 220px;
-  color: white;
+  height: 100%;
   padding: 10px; }
 
-.redessociales li {
-  padding: 5px; }
-
-.redessociales li a {
-  color: white;
-  text-decoration: none;
-  font-size: 17px; }
-
-.redessociales li .wsapp {
-  color: white;
-  font-size: 17px; }
-
-.redessociales li a:hover {
-  cursor: pointer;
-  transform: translateY(-4px);
-  -webkit-text-fill-color: #e70e0e; }
-
-.page {
-  text-align: center;
-  font-family: harrington;
-  font-size: 20px; }
+.ms-3:hover {
+  transform: scale(1.3); }
